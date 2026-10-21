@@ -1,59 +1,52 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>FoldStash Privacy</title><style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#1a1a1a}a{color:#2f6fed}</style></head><body><p><a href=/>← FoldStash</a></p><div># FoldStash — Privacy Policy<br>
-<br>
-**Last updated:** 2026-10-21 (Asia/Shanghai)  <br>
-**Contact:** prophet@mail.grokbot.com  <br>
-**Product:** FoldStash Chrome extension (anonymous publisher)<br>
-<br>
-## Summary<br>
-<br>
-FoldStash is a **local-first** prompt manager. We do **not** operate a server that receives your chat content or prompt library. Payment checkout (when you buy All Access) happens on **Gumroad** **outside** the extension.<br>
-<br>
-## What we store<br>
-<br>
-On your device, in `chrome.storage.local` for your Chrome profile:<br>
-<br>
-- Prompt titles, bodies, tags, folder names, and related timestamps you create<br>
-- Extension settings, including a license key string if you activate one<br>
-<br>
-This data stays in the browser profile unless **you** export it or wipe it from Settings.<br>
-<br>
-## What we do not do<br>
-<br>
-- We do **not** upload your ChatGPT (or other) chat transcripts to FoldStash servers<br>
-- We do **not** sell personal data<br>
-- We do **not** require a FoldStash account to use the free tier<br>
-- We do **not** collect analytics in the POC beyond what Chrome itself may show the developer in the Web Store dashboard after publish (if any)<br>
-<br>
-## Permissions (why)<br>
-<br>
-| Permission | Reason |<br>
-|------------|--------|<br>
-| `storage` | Save your prompt library locally |<br>
-| `sidePanel` | Main UI |<br>
-| `clipboardWrite` | Copy prompt text on your click |<br>
-| `activeTab` | Light page interaction when needed |<br>
-| Host `https://chatgpt.com/*` | Show the optional “Save prompt” button |<br>
-<br>
-## Payments<br>
-<br>
-Purchases for **Lifetime All Access ($79)** or optional **$6.99/mo** are processed by **Gumroad** (primary checkout). Their checkout pages and privacy policies govern payment data (card details, receipts). FoldStash receives license entitlement signals you paste into Settings — we do not process card numbers inside the extension.<br>
-<br>
-*(Polar remains a deferred/optional Merchant of Record path and is not used for current checkout.)*<br>
-<br>
-## Third parties<br>
-<br>
-- **OpenAI / ChatGPT website:** Separate service; FoldStash only reads what you choose to save via the content-script affordance in your browser.<br>
-- **Gumroad:** Checkout and license key issuance.<br>
-<br>
-## Children<br>
-<br>
-FoldStash is not directed at children under 13.<br>
-<br>
-## Changes<br>
-<br>
-We may update this policy. The date at the top will change. Material changes will be noted in the Web Store listing or product docs when published.<br>
-<br>
-## Contact<br>
-<br>
-Questions: **prophet@mail.grokbot.com**<br>
-</div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoldStash — Privacy Policy</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #1a1a1a; }
+    a { color: #2f6fed; } h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.6rem; }
+    table { border-collapse: collapse; width: 100%; } th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    code { background: #f4f4f4; padding: 0 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <p><a href="./">← FoldStash</a></p>
+  <h1>FoldStash — Privacy Policy</h1>
+  <p><strong>Last updated:</strong> 2026-10-21 (Asia/Shanghai)<br />
+  <strong>Contact:</strong> <a href="mailto:prophet@mail.grokbot.com">prophet@mail.grokbot.com</a><br />
+  <strong>Product:</strong> FoldStash Chrome extension (anonymous publisher)</p>
+  <h2>Summary</h2>
+  <p>FoldStash is a <strong>local-first</strong> prompt manager. We do <strong>not</strong> operate a server that receives your chat content or prompt library. Payment checkout (when you buy All Access) happens on <strong>Gumroad</strong> outside the extension.</p>
+  <h2>What we store</h2>
+  <p>On your device, in <code>chrome.storage.local</code> for your Chrome profile:</p>
+  <ul>
+    <li>Prompt titles, bodies, tags, folder names, and related timestamps you create</li>
+    <li>Extension settings, including a license key string if you activate one</li>
+  </ul>
+  <p>This data stays in the browser profile unless <strong>you</strong> export it or wipe it from Settings.</p>
+  <h2>What we do not do</h2>
+  <ul>
+    <li>Upload your ChatGPT chat transcripts to FoldStash servers</li>
+    <li>Sell personal data</li>
+    <li>Require a FoldStash account for the free tier</li>
+    <li>Collect product analytics in the POC beyond Chrome Web Store dashboard metrics after publish</li>
+  </ul>
+  <h2>Permissions (why)</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th></tr></thead>
+    <tbody>
+      <tr><td><code>storage</code></td><td>Save your prompt library locally</td></tr>
+      <tr><td><code>sidePanel</code></td><td>Main UI</td></tr>
+      <tr><td><code>clipboardWrite</code></td><td>Copy prompt text on your click</td></tr>
+      <tr><td><code>activeTab</code></td><td>Light page interaction when needed</td></tr>
+      <tr><td>Host <code>https://chatgpt.com/*</code></td><td>Optional “Save prompt” button</td></tr>
+    </tbody>
+  </table>
+  <h2>Payments</h2>
+  <p>Purchases for <strong>Lifetime All Access ($79)</strong> or optional <strong>$6.99/mo</strong> are processed by <strong>Gumroad</strong>. Their checkout and privacy policy govern payment data. FoldStash does not process card numbers inside the extension — you paste a license key into Settings after purchase.</p>
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:prophet@mail.grokbot.com">prophet@mail.grokbot.com</a></p>
+</body>
+</html>
